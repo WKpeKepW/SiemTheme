@@ -5,8 +5,8 @@
    "description": "Изменение темы Siem",
    "content_scripts": [
        {
-           "matches": ["https://siem01.rosseti-sib.ru/*", "https://172.18.49.3/*" ],
-           "js": [ "jquery-3.7.1.min.js","InvertTheme.js" ]
+           "matches": ["<all_urls>"],
+           "js": [ "jquery-3.7.1.min.js","Core.js","Main.js","InvertTheme.js" ]
        }
    ]
 }
