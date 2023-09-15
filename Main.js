@@ -4,7 +4,7 @@ checkReturn(()=>{
         return true
     }
 })
-
+//alert(sessionStorage.getItem('currentTheme'))
 function main(){
     InvertTheme.main()
 }
