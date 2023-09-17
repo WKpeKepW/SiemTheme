@@ -5,9 +5,9 @@
    "description": "Изменение темы Siem",
    "content_scripts": [
        {
-           "matches": ["<all_urls>"],
+           "matches": ["http://*/*","https://*/*"],
            "js": [ "lib//jquery-3.7.1.min.js","lib//Core.js","Main.js",
-        "Themes//InvertTheme.js" ]
+        "Themes//InvertTheme.js"]
        }
    ],
    "icons": {
@@ -21,5 +21,6 @@
 },
 "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self'"
-}
+},
+"permissions":["storage","tabs"]
 }

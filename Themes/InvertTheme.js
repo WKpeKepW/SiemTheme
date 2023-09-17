@@ -1,6 +1,5 @@
-function main(){
+function InvertTheme(){
     Change('body','filter','invert(1)')
-
     //Change('.pt-icons','filter','invert(1)',true,'#legacyApplicationFrame')
 
     //Change('.mc-navbar','filter','invert(1)',true,null,10000)
