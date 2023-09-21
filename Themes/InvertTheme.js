@@ -97,7 +97,7 @@ async function isSiemCheck() {
 
 async function checkVersion() {
     return await new Promise(resolve => {
-        var checkExist = setInterval(function() {
+        var checkExist = setInterval(function() { //без интервала 
             if (document.querySelector("#legacyApplicationFrame") || document.querySelector("mc-web-app-root") || document.querySelector("pt-siem-knowledge-base-root") || document.querySelector(".pt-root")) {
                 resolve("25");
                 clearInterval(checkExist);
@@ -348,27 +348,32 @@ function setDarkThemeSiemV25() {
     }, 100)
 }
 
-function InvertTheme(){
-isSiemCheck().then((isSiem)=>{
-    console.log("isSiem: " + isSiem)
-    if(!isSiem) return
+function InvertTheme(version){
+        document.body.style.filter = invert//вырубить и получиться контрастный
+    if(version == 25)
+        setDarkThemeSiemV25()
+    else
+        setDarkThemeSiemV24()
+// isSiemCheck().then((isSiem)=>{
+//     console.log("isSiem: " + isSiem)
+//     if(!isSiem) return
 
 
-    checkVersion().then((versionSIEM)=>{
-        document.body.style.filter = invert
-        if(versionSIEM == "25") {
-            console.log("version 25")
-            setDarkThemeSiemV25()
-        } else if (versionSIEM == "24"){ //for v.24 and for v.23 (Samara)
-            console.log("version 24")
-            setDarkThemeSiemV24()
-        } else {
-            console.log("Unknown version")
-        }
-    })
-    .catch(console.error)
-})
-.catch(console.error)
+//     checkVersion().then((versionSIEM)=>{
+
+//         if(versionSIEM == "25") {
+//             console.log("version 25")
+//             setDarkThemeSiemV25()
+//         } else if (versionSIEM == "24"){ //for v.24 and for v.23 (Samara)
+//             console.log("version 24")
+//             setDarkThemeSiemV24()
+//         } else {
+//             console.log("Unknown version")
+//         }
+//     })
+//     .catch(console.error)
+// })
+// .catch(console.error)
 }
 
 //инвертим header health monitora
