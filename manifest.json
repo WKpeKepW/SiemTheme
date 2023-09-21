@@ -1,13 +1,13 @@
 {
    "manifest_version": 3,
    "name": "SiemTheme",
-   "version": "0.2.0",
+   "version": "0.2.5",
    "description": "Изменение темы Siem",
    "content_scripts": [
        {
            "matches": ["http://*/*","https://*/*"],
            "js": [ "lib//jquery-3.7.1.min.js","lib//Core.js","Main.js",
-        "Themes//InvertTheme.js"]
+        "Themes//InvertTheme.js","Themes//InvertThemeBeta.js"]
        }
    ],
    "icons": {
