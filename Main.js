@@ -1,7 +1,7 @@
 async function checkSiem(func){
     await checkReturn(()=>{
         //if($('.pt-root').length || $('.pt-container').length || $('.pt-navbar-icon').length){//siem?
-        if($('.pt-navbar-icon').length || $('.mc-navbar-logo')){//siem?
+        if($('.pt-navbar-icon').length || $('.mc-navbar-logo').length){//siem?
             if($('#legacyApplicationFrame').length || $('mc-web-app-root').length || $('pt-siem-knowledge-base-root').length || $('.pt-root').length){//version
                 func(25)
                 console.log('version:'+25)
