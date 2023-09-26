@@ -9,6 +9,14 @@ function InvertThemeBeta(){
     // Change('mc-navbar-item, mc-navbar-focusable-item, mc-dropdown-trigger, mc-horizontal, ng-star-inserted','background-color','#31200d',true)
     // Change('.mc-navbar-item.mc-active, .mc-navbar-brand.mc-active, .mc-navbar-toggle.mc-active','background','black',true)
     // Change('.events-pdql_changed','background-color','#1b83a814',true,'#legacyApplicationFrame')
-    
-    //NewCoreClass ncc = new NewCoreClass(както обявить класс Style)
+    let ncc = new NewCoreClass([
+    {selector:'body',attr:'filter',value:'invert(1)'},
+    {selector:'.pt-icons',attr:'filter',value:'invert(1)',iframe:'#legacyApplicationFrame',loop:true},
+    {selector:'.mc-navbar',attr:'filter',value:'invert(1)'},
+    {selector:'.mc-navbar',attr:'background-color',value:'#31200d'},
+    {selector:'mc-navbar-item, mc-navbar-focusable-item, mc-dropdown-trigger, mc-horizontal, ng-star-inserted',attr:'background-color',value:'#31200d',loop:true},
+    {selector:'.mc-navbar-item.mc-active, .mc-navbar-brand.mc-active, .mc-navbar-toggle.mc-active',attr:'background',value:'black',loop:true},
+    {selector:'.statistics-footer',attr:'background-color',value:'#1b83a814',iframe:'#legacyApplicationFrame',loop:true},
+],0)
+ncc.StylesInterval()
 }
