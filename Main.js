@@ -18,11 +18,11 @@ async function main(){
     let ct
     await chrome.storage.local.get("currentTheme").then((obj)=> ct = obj.currentTheme)
     switch(ct){//добавление темы, так же в манифест добавить скрипт
-        case 'InvertTheme':
-        checkSiem(InvertTheme)
+        case 'Invert':
+        checkSiem(Invert)
         break
-        case 'InvertThemeBeta':
-        checkSiem(InvertThemeBeta)
+        case 'Dark':
+        checkSiem(Dark)
         break
     }
 }
