@@ -55,11 +55,15 @@ function v25(){
         {selector:'events-visualization widget-configurator',attr:'border-right',value:borderColor,iframe:iframe,loop:true},
 
         {selector:'body',attr:color,value:colorColorTwo,iframe:iframe},
+        {selector:'body',attr:background,value:backgroundColorOne,iframe:iframe},
+        {selector:'body',attr:background,value:backgroundColorOne},
         {selector:'.view-container',attr:background,value:backgroundColorOne,iframe:iframe,loop:true},
         {selector:'.pt-container .pt-section',attr:background,value:backgroundColorTwo,iframe:iframe,loop:true},
         {selector:'.pt-container .pt-section',attr:border,value:borderColor,iframe:iframe,loop:true},
         {selector:'.mc-loader-wrapper',attr:background,value:backgroundColorOne,iframe:iframe,loop:true},
         {selector:'.events-view__data>section',attr:'border-bottom',value:borderColor,iframe:iframe,loop:true},
+        {selector:'.events-view__data>section',attr:background,value:backgroundColorTwo,iframe:iframe,loop:true},
+        {selector:'.events-pdql_changed',attr:background,value:backgroundColorFour,iframe:iframe,loop:true},
         {selector:'.ui-grid-header',attr:'border-bottom',value:borderColor,iframe:iframe,loop:true},
         {selector:'.left-border',attr:'border-left',value:borderColor,iframe:iframe,loop:true}, //layout-column grid-container_ie-fix left-border //timeout
         {selector:'.mc-action-bar',attr:background,value:backgroundColorOne,iframe:iframe,loop:true},
@@ -105,10 +109,9 @@ function v25(){
         {selector:'.mc-alert_info',attr:background,value:backgroundColorOne,iframe:iframe,loop:true},
         {selector:'.mc-alert_info',attr:border,value:borderColor,iframe:iframe,loop:true},
         {selector:'.mc-alert_info',attr:color,value:colorColorOne,iframe:iframe,loop:true},
-        {selector:'.statistics-footer',attr:background,value:backgroundColorThree,iframe:iframe,loop:true},
+        {selector:'.statistics-footer',attr:background,value:backgroundColorFour,iframe:iframe,loop:true},
         {selector:'.statistics-footer',attr:'border-top',value:borderColor,iframe:iframe,loop:true},
         {selector:'.statistics-footer',attr:color,value:colorColorOne,iframe:iframe,loop:true},
-        {selector:'.events-pdql_changed',attr:background,value:backgroundColorFour,iframe:iframe,loop:true},
 
         {selector:'.highcharts-background',attr:'fill',value:backgroundColorTwo,iframe:iframe,loop:true},
         {selector:'mc-timepicker>input',attr:background,value:backgroundColorOne,iframe:iframe,loop:true},
