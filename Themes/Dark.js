@@ -85,7 +85,7 @@ function v25(){
           .mc-select .mc-select-match .mc-select-match__wrapper`, attr:border,value:borderColor,iframe:iframe,loop:true},
 
         {selector:'.mc-modal__content',attr:background,value:backgroundColorTwo,iframe:iframe,loop:true},
-
+        {selector:'.mc-popover__footer',attr:'border-top',value:borderColor,iframe:iframe,loop:true},
         {selector:'.mc-popover',attr:background,value:backgroundColorTwo,iframe:iframe,loop:true},
         {selector:'.mc-popover',attr:border,value:borderColor,iframe:iframe,loop:true},
         {selector:'.mc-popover',attr:color,value:colorColorTwo,iframe:iframe,loop:true},
@@ -178,7 +178,7 @@ function v25(){
     ncc.StylesInterval()
 }
 function v24(){
-
+    RulesChanger()
 }
 
 //legacyApplicationFrame
