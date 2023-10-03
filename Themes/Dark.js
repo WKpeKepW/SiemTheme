@@ -24,7 +24,6 @@ function v25(){
     let ncc = new NewCoreClass([
         {selector:'.mc-modal .mc-modal-content',attr:background,value:backgroundColorTwo},
         {selector:'.mc-modal .mc-modal-footer',attr:background,value:backgroundColorTwo},
-
         //refresher .pt-refresher .mc-dropdown-menu
         //.mc-dropdown-menu
         {selector:'.mc-dropdown-menu',attr:background,value:backgroundColorTwo,iframe:iframe,loop:true},
@@ -44,6 +43,11 @@ function v25(){
         {selector:'pt-notifications-center-header .notifications-center-header',attr:background,value:backgroundColorOne,loop:true},
         {selector:'pt-notifications-center-header .notifications-center-header',attr:'border-color',value:backgroundColorFive,loop:true},
         {selector:'pt-notifications-center-content .notifications-center-content',attr:background,value:backgroundColorTwo,loop:true},
+        {selector:'pt-notifications-group .notifications-group .notifications-group__header',attr:background,value:backgroundColorTwo,loop:true},
+        {selector:'pt-notifications-group .notifications-group .notifications-group__header',attr:color,value:colorColorTwo,loop:true},
+        {selector:'pt-notification .notification',attr:background,value:backgroundColorTwo,loop:true},
+        {selector:'pt-notification .notification',attr:border,value:borderColor,loop:true},
+        {selector:'pt-notifications-group .notifications-group .notifications-group__header',attr:'border-bottom',value:borderColor,loop:true},
         {selector:'pt-notifications-center-header .notifications-center-header .notifications-center-header__title-text',attr:color,value:colorColorTwo,loop:true},
         {selector:'pt-health-monitoring-header .health-monitoring-header .health-monitoring__title-text',attr:color,value:colorColorTwo,loop:true},
         {selector:'pt-health-monitoring-content .health-monitoring-content',attr:'border-color',value:backgroundColorFive,loop:true},
