@@ -6,7 +6,7 @@
    "content_scripts": [
        {
            "matches": ["http://*/*","https://*/*"],
-           "js": [ "lib//jquery-3.7.1.min.js","lib//Core.js","lib//NewCore.js","Main.js",
+           "js": [ "lib//Core_2.0.js","Main.js",
         "Themes//Invert.js","Themes//Dark.js"]
        }
    ],

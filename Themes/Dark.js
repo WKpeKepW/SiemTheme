@@ -55,7 +55,7 @@ function v25(){
         {selector:'events-visualization widget-configurator',attr:'border-right',value:borderColor,iframe:iframe,loop:true},
 
         {selector:'body',attr:color,value:colorColorTwo,iframe:iframe},
-        {selector:'.view-container',attr:background,value:backgroundColorOne,iframe:iframe},
+        {selector:'.view-container',attr:background,value:backgroundColorOne,iframe:iframe,loop:true},
         {selector:'.pt-container .pt-section',attr:background,value:backgroundColorTwo,iframe:iframe,loop:true},
         {selector:'.pt-container .pt-section',attr:border,value:borderColor,iframe:iframe,loop:true},
         {selector:'.mc-loader-wrapper',attr:background,value:backgroundColorOne,iframe:iframe,loop:true},
@@ -116,7 +116,31 @@ function v25(){
         {selector:'mc-timepicker>input',attr:border,value:borderColor,iframe:iframe,loop:true},
 
         {selector:'.mc-dropdown-item',attr:background,value:backgroundColorTwo,loop:true},
+        {selector:'.dropdown-menu',attr:background,value:backgroundColorOne,loop:true,iframe:iframe},
+        {selector:'.mc-dl .mc-dd, .mc-dl dd, dl .mc-dd, dl dd',attr:color,value:colorColorTwo,loop:true,iframe:iframe},
         {selector:'.mc-dropdown-item.mc-selected',attr:background,value:backgroundColorThree,loop:true},
+
+        {selector:'.mc-select-dropdown',attr:background,value:backgroundColorTwo,loop:true,iframe:iframe},
+        {selector:'mc-select-list-choices .mc-select-choices',attr:'border-top',value:borderColor,loop:true,iframe:iframe},
+        {selector:'.mc-list__list .mc-list__item .mc-list__item-tpl.mc-active',attr:background,value:backgroundColorThree,loop:true,iframe:iframe},
+        {selector:'mc-select-list-choices .mc-select-choices mc-list .mc-list .mc-list__item-tpl .mc-list-item__text',attr:color,value:colorColorTwo,loop:true,iframe:iframe},
+
+
+        {selector:'.widget-wrapper',attr:background,value:backgroundColorTwo,loop:true,iframe:iframe},
+        {selector:'.widget-wrapper',attr:border,value:borderColor,loop:true,iframe:iframe},
+        {selector:'.mc-alert_error, checks-view .check-view__header.check-view__header_fail',attr:background,value:backgroundColorThree,loop:true,iframe:iframe},
+        {selector:'.mc-alert_error, checks-view .check-view__header.check-view__header_fail',attr:border,value:borderColor,loop:true,iframe:iframe},
+        //{selector:'.dashboards-list mc-list.mc-list_horizontal .mc-list .mc-list__item .mc-list__item-tpl .mc-list-item__text',attr:color,value:'white !important',loop:true,iframe:iframe},
+        {selector:'.pt-section',attr:background,value:backgroundColorTwo,loop:true},
+        {selector:'.ag-root.ag-layout-normal',attr:background,value:backgroundColorTwo,loop:true},
+        {selector:'.mc-action-bar',attr:background,value:backgroundColorOne,loop:true},
+        {selector:'.mc-splitter',attr:background,value:backgroundColorOne,loop:true},
+        {selector:'ag-grid-angular [class^=ag-], ag-grid-angular [class^=ag-]:focus, ag-grid-angular [class^=ag-]:after, ag-grid-angular [class^=ag-]:before',attr:background,value:backgroundColorTwo,loop:true},
+        {selector:'.mc-button.mc-second, .mc-icon-button.mc-second',attr:color,value:colorColorTwo,loop:true},
+        //{selector:'ag-grid-angular .ag-header-container',attr:background,value:backgroundColorOne,loop:true},
+        {selector:'ag-grid-angular .ag-header',attr:'border-bottom',value:borderColor,loop:true},
+        {selector:'.mc-sidebar-opened .mc-sidebar-header',attr:'border-bottom',value:borderColor,loop:true},
+        {selector:'.pt-section-header.pt-section-header_with-border',attr:'border-bottom',value:borderColor,loop:true},
     ],0)
     ncc.NewRule([
         {selector:`::-webkit-scrollbar {
