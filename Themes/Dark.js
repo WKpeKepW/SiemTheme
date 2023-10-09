@@ -177,8 +177,111 @@ function v25(){
     ])
     ncc.StylesInterval()
 }
+
+
+
+
 function v24(){
-    RulesChanger()
+    RulesChanger([
+        {element:'background-color',   previous:'rgb(255, 255, 255)',new:backgroundColorTwo},
+        {element:'background-color',   previous:'rgb(240, 240, 240)',new:backgroundColorOne},
+        {element:'background-color',   previous:'rgb(234, 244, 251)',new:backgroundColorOne},
+        {element:'background-color',   previous:'rgb(252, 246, 232)',new:backgroundColorFour},//тот же ховер но работает
+        {element:'background-color',   previous:'rgb(217, 235, 247)',new:backgroundColorThree},
+        {element:'background-color',   previous:'rgb(230, 230, 230)',new:backgroundColorThree},
+        {element:'background-color',   previous:'rgb(252, 239, 237)',new:backgroundColorFour},
+        {element:'background-color',   previous:'rgb(204, 204, 204)',new:backgroundColorOne},
+        {element:'background-color',   previous:'rgb(245, 245, 245)',new:backgroundColorOne},
+        {element:'background-color',   previous:'rgba(255, 255, 255, 0.9)',new:'rgba(42, 42, 42, 0.9)'},
+        {element:'background-image',   previous:'linear-gradient(rgb(255, 255, 255), rgb(240, 240, 240))',new:'linear-gradient(rgb(57, 57, 57), rgb(24, 24, 24))'},
+        {element:'background-image',   previous:'linear-gradient(rgb(204, 204, 204), rgb(230, 230, 230))',new:'linear-gradient(rgb(57, 57, 57), rgb(24, 24, 24))'},
+        {element:'background',   previous:'linear-gradient(rgb(240, 240, 240), rgb(230, 230, 230))',new:'linear-gradient(rgb(50, 50, 50), rgb(24, 24, 24))'},
+        {element:'background-color',   previous:'rgba(217, 235, 247, 0.8)',new:'rgba(32, 59, 77, 0.8)'},
+        {element:'color',              previous:'rgb(77, 77, 77)',new:'rgb(226, 226, 226)'},
+        {element:'color',              previous:'rgb(51, 51, 51)',new:'rgb(255, 255, 255)'},
+        {element:'color',              previous:'rgb(80, 80, 80)',new:'rgb(255, 255, 255)'},
+        {element:'color',              previous:'rgb(204, 204, 204)',new:'rgb(226, 226, 226)'},
+        {element:'color',              previous:'rgb(128, 128, 128)',new:'rgb(200, 200, 200)'},
+        {element:'border-color',       previous:'rgba(217, 235, 247, 0.8)',new:'rgba(32, 59, 77, 0.8)'},
+
+        {element:'border-top-color',   previous:'rgb(240, 211, 153)',new:backgroundColorFour},
+        {element:'border-color',       previous:'rgb(172, 210, 236)',new:'rgb(57, 57, 57)'},
+        {element:'border-color',       previous:'rgb(240, 240, 240)',new:'rgb(57, 57, 57)'},
+
+        {element:'border-bottom-color',previous:'rgb(240, 240, 240)',new:'rgb(57, 57, 57)'},
+        {element:'border-left-color',  previous:'rgb(240, 240, 240)',new:'rgb(57, 57, 57)'},
+        {element:'border-right-color', previous:'rgb(240, 240, 240)',new:'rgb(57, 57, 57)'},
+        {element:'border-top-color',   previous:'rgb(240, 240, 240)',new:'rgb(57, 57, 57)'},
+
+        {element:'border-bottom-color',previous:'rgb(224, 224, 224)',new:'rgb(57, 57, 57)'},//наводка на основные контейнеры
+        {element:'border-left-color',  previous:'rgb(224, 224, 224)',new:'rgb(57, 57, 57)'},
+        {element:'border-right-color', previous:'rgb(224, 224, 224)',new:'rgb(57, 57, 57)'},
+        {element:'border-top-color',   previous:'rgb(224, 224, 224)',new:'rgb(57, 57, 57)'},
+
+        {element:'border-bottom-color',previous:'rgb(212, 212, 212)',new:'rgb(57, 57, 57)'},
+        {element:'border-left-color',  previous:'rgb(212, 212, 212)',new:'rgb(57, 57, 57)'},
+        {element:'border-right-color', previous:'rgb(212, 212, 212)',new:'rgb(57, 57, 57)'},
+        {element:'border-top-color',   previous:'rgb(212, 212, 212)',new:'rgb(57, 57, 57)'},
+        
+        {element:'border-bottom-color',previous:'rgb(255, 255, 255)',new:'rgb(57, 57, 57)'},
+        {element:'border-left-color',  previous:'rgb(255, 255, 255)',new:'rgb(57, 57, 57)'},
+        {element:'border-right-color', previous:'rgb(255, 255, 255)',new:'rgb(57, 57, 57)'},
+        {element:'border-top-color',   previous:'rgb(255, 255, 255)',new:'rgb(57, 57, 57)'},
+
+        {element:'border-bottom-color',previous:'rgb(179, 179, 179)',new:'rgb(57, 57, 57)'},
+        {element:'border-left-color',  previous:'rgb(179, 179, 179)',new:'rgb(57, 57, 57)'},
+        {element:'border-right-color', previous:'rgb(179, 179, 179)',new:'rgb(57, 57, 57)'},
+        {element:'border-top-color',   previous:'rgb(179, 179, 179)',new:'rgb(57, 57, 57)'},
+
+        {element:'border-bottom-color',previous:'rgb(222, 222, 222)',new:'rgb(57, 57, 57)'},
+        {element:'border-left-color',  previous:'rgb(222, 222, 222)',new:'rgb(57, 57, 57)'},
+        {element:'border-right-color', previous:'rgb(222, 222, 222)',new:'rgb(57, 57, 57)'},
+        {element:'border-top-color',   previous:'rgb(222, 222, 222)',new:'rgb(57, 57, 57)'},
+
+        {element:'border-bottom-color',previous:'rgb(230, 230, 230)',new:'rgb(57, 57, 57)'},
+        {element:'border-left-color',  previous:'rgb(230, 230, 230)',new:'rgb(57, 57, 57)'},
+        {element:'border-right-color', previous:'rgb(230, 230, 230)',new:'rgb(57, 57, 57)'},
+        {element:'border-top-color',   previous:'rgb(230, 230, 230)',new:'rgb(57, 57, 57)'},
+
+        {element:'border-bottom-color',previous:'rgb(177, 177, 177)',new:'rgb(57, 57, 57)'},
+        {element:'border-left-color',  previous:'rgb(177, 177, 177)',new:'rgb(57, 57, 57)'},
+        {element:'border-right-color', previous:'rgb(177, 177, 177)',new:'rgb(57, 57, 57)'},
+        {element:'border-top-color',   previous:'rgb(177, 177, 177)',new:'rgb(57, 57, 57)'},
+
+        {element:'border-bottom-color',previous:'rgb(204, 204, 204)',new:'rgb(57, 57, 57)'},
+        {element:'border-left-color',  previous:'rgb(204, 204, 204)',new:'rgb(57, 57, 57)'},
+        {element:'border-right-color', previous:'rgb(204, 204, 204)',new:'rgb(57, 57, 57)'},
+        {element:'border-top-color',   previous:'rgb(204, 204, 204)',new:'rgb(57, 57, 57)'},
+    ])
+    NewRule([
+        {selector:`::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+            box-shadow: inset 1px 1px #0000001f;
+            -webkit-transition: all .5s cubic-bezier(.35,0,.25,1);
+            transition: all .5s cubic-bezier(.35,0,.25,1);
+            background-color: ${backgroundColorFive}
+        }`},
+        {selector:`::-webkit-scrollbar:hover {
+            box-shadow: inset 1px 1px #0000000e,inset 0 -1px #0000000a;
+            background-color: ${backgroundColorThree}
+        }`},
+        {selector:`::-webkit-scrollbar-button {
+            display: none
+        }`},
+        {selector:`::-webkit-scrollbar-corner {
+            background-color: transparent
+        }`},
+        {selector:`::-webkit-scrollbar-thumb {
+            background-color: ${colorColorOne};
+            box-shadow: inset 1px 1px #0000000e,inset 0 -1px #00000016;
+            -webkit-transition: all .5s cubic-bezier(.35,0,.25,1);
+            transition: all .5s cubic-bezier(.35,0,.25,1)
+        }`}
+    ])
+    RulesChangerCallBack([
+        {selector:'highcharts-background', element:'fill', new:backgroundColorTwo}
+    ])
 }
 
 //legacyApplicationFrame
