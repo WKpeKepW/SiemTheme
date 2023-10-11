@@ -22,6 +22,7 @@ function Dark(version){
         {element:'background-color',   previous:'rgb(217, 235, 247)',new:backgroundColorThree},
         {element:'background-color',   previous:'rgb(230, 230, 230)',new:backgroundColorThree},
         {element:'background-color',   previous:'rgb(252, 239, 237)',new:backgroundColorFour},
+        {element:'background-color',   previous:'rgb(247, 247, 247)',new:backgroundColorTwo},
         {element:'background-color',   previous:'rgb(216, 234, 247)',new:backgroundColorThree},
         {element:'background-color',   previous:'rgb(242, 242, 242)',new:backgroundColorThree},
         {element:'background-color',   previous:'rgb(204, 204, 204)',new:backgroundColorOne},
@@ -128,7 +129,8 @@ function Dark(version){
             }`}
         ])
         Core.RulesChangerCallBack([
-            {selector:'highcharts-background', element:'fill', new:backgroundColorTwo}
+            {selector:'highcharts-background', element:'fill', new:backgroundColorTwo},
+            //{selector:'content-container', element:'color', new:'rgb(226, 226, 226)'}
         ])
 }
 
