@@ -186,7 +186,7 @@ function v24(){
         {element:'background-color',   previous:'rgb(255, 255, 255)',new:backgroundColorTwo},
         {element:'background-color',   previous:'rgb(240, 240, 240)',new:backgroundColorOne},
         {element:'background-color',   previous:'rgb(234, 244, 251)',new:backgroundColorOne},
-        {element:'background-color',   previous:'rgb(252, 246, 232)',new:backgroundColorFour},//тот же ховер но работает
+        {element:'background-color',   previous:'rgb(252, 246, 232)',new:backgroundColorFour},
         {element:'background-color',   previous:'rgb(217, 235, 247)',new:backgroundColorThree},
         {element:'background-color',   previous:'rgb(230, 230, 230)',new:backgroundColorThree},
         {element:'background-color',   previous:'rgb(252, 239, 237)',new:backgroundColorFour},
@@ -212,6 +212,11 @@ function v24(){
         {element:'border-left-color',  previous:'rgb(240, 240, 240)',new:'rgb(57, 57, 57)'},
         {element:'border-right-color', previous:'rgb(240, 240, 240)',new:'rgb(57, 57, 57)'},
         {element:'border-top-color',   previous:'rgb(240, 240, 240)',new:'rgb(57, 57, 57)'},
+
+        {element:'border-bottom-color',previous:'rgb(244, 184, 174)',new:backgroundColorFour},
+        {element:'border-left-color',  previous:'rgb(244, 184, 174)',new:backgroundColorFour},
+        {element:'border-right-color', previous:'rgb(244, 184, 174)',new:backgroundColorFour},
+        {element:'border-top-color',   previous:'rgb(244, 184, 174)',new:backgroundColorFour},
 
         {element:'border-bottom-color',previous:'rgb(224, 224, 224)',new:'rgb(57, 57, 57)'},//наводка на основные контейнеры
         {element:'border-left-color',  previous:'rgb(224, 224, 224)',new:'rgb(57, 57, 57)'},
