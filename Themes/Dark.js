@@ -24,10 +24,18 @@ function Dark(version){
         {element:'background-color',   previous:'rgb(236, 248, 232)',new:`rgb(${backgroundColorThree})`},
         {element:'background-color',   previous:'rgb(227, 227, 227)',new:`rgb(${backgroundColorOne})`},
 
+        {element:'background-color',   previous:'rgb(237, 248, 233)',new:`rgb(${backgroundColorThree})`},
         {element:'background-color',   previous:'var(--ag-background-color,#fff)',new:`rgb(${backgroundColorTwo})`},//mc
         {element:'background-color',   previous:'var(--ag-header-background-color,#fff)',new:`rgb(${backgroundColorTwo})`},
         {element:'background-color',   previous:'var(--ag-odd-row-background-color,#fff)',new:`rgb(${backgroundColorTwo})`},
         {element:'background-color',   previous:'var(--ag-selected-row-background-color,#d8eaf7)',new:`rgb(${backgroundColorThree})`},
+        {element:'background-color',   previous:'var(--ag-header-foreground-color, var(--ag-secondary-foreground-color, #999999))',new:`rgb(${backgroundColorTwo})`},
+        {element:'background-color',   previous:'var(--ag-background-color, white)',new:`rgb(${backgroundColorTwo})`},
+        {element:'background-color',   previous:'var(--ag-header-background-color, white)',new:`rgb(${backgroundColorTwo})`},
+        {element:'background-color',   previous:'var(--ag-odd-row-background-color, white)',new:`rgb(${backgroundColorTwo})`},
+        {element:'background-color',   previous:'var(--ag-selected-row-background-color, #d8eaf7)',new:`rgb(${backgroundColorThree})`},
+        {element:'background-color',   previous:'rgb(252, 245, 232)',new:`rgb(${backgroundColorFour})`},
+        {element:'box-shadow',         previous:'rgb(230, 230, 230) -1px 0px inset, rgb(230, 230, 230) 0px 1px inset, rgb(230, 230, 230) 0px -1px inset',new:`none`},
 
         {element:'background-color',   previous:'rgb(252, 246, 232)',new:`rgb(${backgroundColorFour})`},
         {element:'background-color',   previous:'rgb(217, 235, 247)',new:`rgb(${backgroundColorThree})`},
@@ -52,18 +60,19 @@ function Dark(version){
         {element:'color',              previous:'rgb(17, 79, 120)',new:`rgb(${colorColorFour})`},
         {element:'color',              previous:'rgb(119, 0, 136)',new:`rgb(${colorCodeKBOne})`},
         {element:'color',              previous:'rgb(170, 17, 17)',new:`rgb(${colorCodeKBTwo})`},
+        {element:'color',              previous:'rgb(0, 0, 0)',new:`rgb(${white})`},
         {element:'color',              previous:'inherit',new:`rgb(${white}})`},
 
         {element:'color',              previous:'rgb(51, 51, 51)',new:`rgb(${white})`},
         {element:'color',              previous:'rgb(80, 80, 80)',new:`rgb(${white})`},
         {element:'color',              previous:'rgb(204, 204, 204)',new:`rgb(${colorColorTwo})`},
         {element:'color',              previous:'rgb(128, 128, 128)',new:`rgb(${colorColorTwo})`},
-        {element:'fill',              previous:'rgb(51, 51, 51)',new:`rgb(${colorColorTwo})`},
+        {element:'fill',               previous:'rgb(51, 51, 51)',new:`rgb(${colorColorTwo})`},
         {element:'border-color',       previous:'rgba(217, 235, 247, 0.8)',new:`rgba(${backgroundColorThree}, 0.8)`},
 
-        {element:'border-bottom-color',   previous:'rgb(240, 211, 153)',new:`rgba(${backgroundColorFour})`},
-        {element:'border-left-color',   previous:'rgb(240, 211, 153)',new:`rgba(${backgroundColorFour})`},
-        {element:'border-right-color',   previous:'rgb(240, 211, 153)',new:`rgba(${backgroundColorFour})`},
+        {element:'border-bottom-color',previous:'rgb(240, 211, 153)',new:`rgba(${backgroundColorFour})`},
+        {element:'border-left-color',  previous:'rgb(240, 211, 153)',new:`rgba(${backgroundColorFour})`},
+        {element:'border-right-color', previous:'rgb(240, 211, 153)',new:`rgba(${backgroundColorFour})`},
         {element:'border-top-color',   previous:'rgb(240, 211, 153)',new:`rgba(${backgroundColorFour})`},
 
         {element:'border-color',       previous:'rgb(172, 210, 236)',new:`rgba(${borderColor})`},
@@ -123,9 +132,17 @@ function Dark(version){
         {element:'border-left-color',  previous:'rgb(204, 204, 204)',new:`rgba(${borderColor})`},
         {element:'border-right-color', previous:'rgb(204, 204, 204)',new:`rgba(${borderColor})`},
         {element:'border-top-color',   previous:'rgb(204, 204, 204)',new:`rgba(${borderColor})`},
+
+        {element:'border-bottom-color',previous:'rgb(240, 212, 155)',new:`rgba(${backgroundColorFive})`},//mc
+        {element:'border-left-color',  previous:'rgb(240, 212, 155)',new:`rgba(${backgroundColorFive})`},
+        {element:'border-right-color', previous:'rgb(240, 212, 155)',new:`rgba(${backgroundColorFive})`},
+        {element:'border-top-color',   previous:'rgb(240, 212, 155)',new:`rgba(${backgroundColorFive})`},
     ])
         Core.RulesChanger()
         Core.NewRule([
+            {selector:`body {
+                color: rgb(${white})
+            }`},
             {selector:`::-webkit-scrollbar {
                 width: 10px;
                 height: 10px;
@@ -153,6 +170,7 @@ function Dark(version){
         ])
         Core.RulesChangerCallBack([
             {selector:'text', element:'fill', new:`rgb(${colorColorTwo})`,tagname:true},
+            {selector:'text', element:'fill', new:`rgb(${colorColorTwo})`,tagname:true, iframe:true},
             {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'background', new:`rgb(${backgroundColorTwo})`},
             {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'color', new:`rgb(${colorColorTwo})`},
             {selector:'highcharts-background', element:'fill', new:`rgb(${backgroundColorTwo})`},
