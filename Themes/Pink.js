@@ -21,6 +21,9 @@ function Pink(version){
         {element:'background-color',   previous:'rgb(32, 110, 162)',new:`rgb(${PinkbackgroundColorThree})`},
         {element:'background-color',   previous:'rgb(7, 48, 75)',new:`rgb(${PinkbackgroundColorThree})`},
         
+        {element:'background-color',   previous:'rgb(252, 239, 236)',new:`rgb(${PinkbackgroundColorFour})`},
+        {element:'background-color',   previous:'rgb(235, 244, 251)',new:`rgb(${PinkbackgroundColorThree})`},
+
         {element:'background-color',   previous:'rgb(255, 255, 255)',new:`rgb(${PinkbackgroundColorTwo})`},
         {element:'background-color',   previous:'rgb(240, 240, 240)',new:`rgb(${PinkbackgroundColorOne})`},
         {element:'background-color',   previous:'rgb(234, 244, 251)',new:`rgb(${PinkbackgroundColorOne})`},
