@@ -23,6 +23,9 @@ async function main(){
         case 'Dark':
         checkSiem(Dark)
         break
+        case 'Pink':
+        checkSiem(Pink)
+        break
     }
 }
 main()
