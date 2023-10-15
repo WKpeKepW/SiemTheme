@@ -1,24 +1,25 @@
-const backgroundColorOne = '24, 24, 24'//darkgray
-const backgroundColorTwo = '42, 42, 42'//whitegray
-const backgroundColorThree = '32, 59, 77'//blue
-const backgroundColorFour = '38, 30, 13'//yellow
-const backgroundColorFive = '97, 76, 33'//active four
-const borderColor = '57, 57, 57'//whitegrayx2
-const colorColorOne = '51, 143, 204'//bluetext
-const colorColorTwo = '226, 226, 226'//darkwhite
-const colorColorThree = '119, 119, 119'//gray
-const colorColorFour = '84, 187, 255'//activeBlue
-const colorCodeKBOne = '172, 0, 196'//code in kb purple
-const colorCodeKBTwo = '224, 0, 20'//code in kb red
-const white = '255, 255, 255'//white
-
 function Dark(version){
+    const backgroundColorOne = '24, 24, 24'//darkgray
+    const backgroundColorTwo = '42, 42, 42'//whitegray
+    const backgroundColorThree = '32, 59, 77'//blue
+    const backgroundColorFour = '38, 30, 13'//yellow
+    const backgroundColorFive = '97, 76, 33'//active four
+    const borderColor = '57, 57, 57'//whitegrayx2
+    const colorColorOne = '51, 143, 204'//bluetext
+    const colorColorTwo = '226, 226, 226'//darkwhite
+    const colorColorThree = '119, 119, 119'//gray
+    const colorColorFour = '84, 187, 255'//activeBlue
+    const colorCodeKBOne = '172, 0, 196'//code in kb purple
+    const colorCodeKBTwo = '224, 0, 20'//code in kb red
+    const white = '255, 255, 255'//white
     let Core = new CoreClass([
         {element:'background-image',   previous:'url(\"/assets/images/navbar-icon.svg\")',new:"url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFxEAABcRAcom8z8AAAM4SURBVFhHxZddSJNRGMf/583ED2RZzTRXIiUlGasMoggimVEaQTmULN1Fd9VFWayLLrrJCAcRSAhJFJhNS2ujpNDCD6ISGkGKfRiK2Ycfy2aaYzr39p6z45jbtNfa9AcPez4G/2fnfc55zwgkKlQpBwnE4yBEvQhYRnOhwgXRJoK0AaTsaO/HanI7MeUQEVDL6/PG/V9DYu3wjyMCiPTL55kHbnG6+icEArLRnZ4fqHiNW5ySJjUgxvIg5PiIUwSBOyHHNPITPuKMoDUQFh2N5Pw8Zsrt23jWDRW/Z7PyaDpBayB8aSzSzuuZqQ5k8yxgnkWcErQG/NZWgorfnUWcErIZkCNOIXdUa8dFQhbz2INiQyoiV8Qxf/BlK8IVCqzctweR8fH4/bkX3x7XwzE0xOqU6FUqZDwxM7/tVSuull9nPkUURdTU1PBoGiMzNrClpBiJ2XuZ311hRFJeDoTwcBZTnGNjaC8uQa/pIYu9G/BlcnISsbEBd/uIrEeQXHB4mjglLCoKmy5eQIJmN8/8G7IacE040X7JgKeabLTk5KOvsdldIASpZ0+xzxf2UXdOwmKxQKvVeiw3N5dX/JHVwKcbt9BdWQX79z4Mv/8Ay+lzGPvyldXo0jcvV0zbaoODg6ivr/dYQ0MDr/gjq4G+Z03cc+OamEB/y3MeSQ0uieHe3JG3DaUp9sMr53Q64XK5eDQ3ZDXgO2gkLAxxO3fwCOjp6WFNTKFUKrn3d2Q1sOaYTtqGWkTEKaFYvw5br1xGdNJqVuvs7GQNWK1WOBwOlktPT4fBYEBWVhYyMzOh0WhYPhCyzoHZKCwshMlkYn5paSl0Oh3zvfnvc6C7shqu8XEeubHb7SgqKvKIU/R6PaqqquY0D7JWoHH/IdRZ+xEhzUJCQgK6urpgNpsxMDDA6r7Q76jVasTExLDZoEexd6NeyDuKz+zKQPmb18wPMvIeQdPoMPeCj7xzIITM+Ag6NqdhKDGe+UajETabjflBJvAMPJIuE0YZl4kg4D8Dkrg4T+IMwQXiudZw8UDXu1AhSn9M8JZ6CyBOeSdAEMvrFkacUjYlWiDZScnSJAv11qTv8Q7JrgG4+Qcp4leLMYeLXQAAAABJRU5ErkJggg==')"},
         {element:'background-image',   previous:'url(\"images/navbar-icon.png\")',new:"url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFxEAABcRAcom8z8AAAM4SURBVFhHxZddSJNRGMf/583ED2RZzTRXIiUlGasMoggimVEaQTmULN1Fd9VFWayLLrrJCAcRSAhJFJhNS2ujpNDCD6ISGkGKfRiK2Ycfy2aaYzr39p6z45jbtNfa9AcPez4G/2fnfc55zwgkKlQpBwnE4yBEvQhYRnOhwgXRJoK0AaTsaO/HanI7MeUQEVDL6/PG/V9DYu3wjyMCiPTL55kHbnG6+icEArLRnZ4fqHiNW5ySJjUgxvIg5PiIUwSBOyHHNPITPuKMoDUQFh2N5Pw8Zsrt23jWDRW/Z7PyaDpBayB8aSzSzuuZqQ5k8yxgnkWcErQG/NZWgorfnUWcErIZkCNOIXdUa8dFQhbz2INiQyoiV8Qxf/BlK8IVCqzctweR8fH4/bkX3x7XwzE0xOqU6FUqZDwxM7/tVSuull9nPkUURdTU1PBoGiMzNrClpBiJ2XuZ311hRFJeDoTwcBZTnGNjaC8uQa/pIYu9G/BlcnISsbEBd/uIrEeQXHB4mjglLCoKmy5eQIJmN8/8G7IacE040X7JgKeabLTk5KOvsdldIASpZ0+xzxf2UXdOwmKxQKvVeiw3N5dX/JHVwKcbt9BdWQX79z4Mv/8Ay+lzGPvyldXo0jcvV0zbaoODg6ivr/dYQ0MDr/gjq4G+Z03cc+OamEB/y3MeSQ0uieHe3JG3DaUp9sMr53Q64XK5eDQ3ZDXgO2gkLAxxO3fwCOjp6WFNTKFUKrn3d2Q1sOaYTtqGWkTEKaFYvw5br1xGdNJqVuvs7GQNWK1WOBwOlktPT4fBYEBWVhYyMzOh0WhYPhCyzoHZKCwshMlkYn5paSl0Oh3zvfnvc6C7shqu8XEeubHb7SgqKvKIU/R6PaqqquY0D7JWoHH/IdRZ+xEhzUJCQgK6urpgNpsxMDDA6r7Q76jVasTExLDZoEexd6NeyDuKz+zKQPmb18wPMvIeQdPoMPeCj7xzIITM+Ag6NqdhKDGe+UajETabjflBJvAMPJIuE0YZl4kg4D8Dkrg4T+IMwQXiudZw8UDXu1AhSn9M8JZ6CyBOeSdAEMvrFkacUjYlWiDZScnSJAv11qTv8Q7JrgG4+Qcp4leLMYeLXQAAAABJRU5ErkJggg==')"},
         {element:'background-color',   previous:'rgb(255, 255, 255)',new:`rgb(${backgroundColorTwo})`},
         {element:'background-color',   previous:'rgb(240, 240, 240)',new:`rgb(${backgroundColorOne})`},
         {element:'background-color',   previous:'rgb(234, 244, 251)',new:`rgb(${backgroundColorOne})`},
+        {element:'background-color',   previous:'white',new:`rgb(${backgroundColorTwo})`},
+        {element:'background',   previous:'linear-gradient(to right, rgb(240, 240, 240) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgb(240, 240, 240) 100%), url(\"/assets/images/login-bg.png\") 50% 40% repeat-x',new:`linear-gradient(to right, rgb(${backgroundColorOne}) 0%, rgba(${backgroundColorOne}, 0) 20%, rgba(${backgroundColorOne}, 0) 80%, rgb(${backgroundColorOne}) 100%), url(\"/assets/images/login-bg.png\") 50% 40% repeat-x`},
         
         {element:'background-color',   previous:'rgb(252, 239, 236)',new:`rgb(${backgroundColorFour})`},
         {element:'background-color',   previous:'rgb(235, 244, 251)',new:`rgb(${backgroundColorThree})`},
@@ -73,7 +74,7 @@ function Dark(version){
         {element:'color',              previous:'rgb(80, 80, 80)',new:`rgb(${white})`},
         {element:'color',              previous:'rgb(204, 204, 204)',new:`rgb(${colorColorTwo})`},
         {element:'color',              previous:'rgb(128, 128, 128)',new:`rgb(${colorColorTwo})`},
-        {element:'fill',               previous:'rgb(51, 51, 51)',new:`rgb(${colorColorTwo})`},
+        //{element:'fill',               previous:'rgb(51, 51, 51)',new:`rgb(${colorColorTwo})`},
         {element:'border-color',       previous:'rgba(217, 235, 247, 0.8)',new:`rgba(${backgroundColorThree}, 0.8)`},
 
         {element:'border-bottom-color',previous:'rgb(240, 211, 153)',new:`rgba(${backgroundColorFour})`},
@@ -175,8 +176,11 @@ function Dark(version){
             }`}
         ])
         Core.RulesChangerCallBack([
-            {selector:'text', element:'fill', new:`rgb(${colorColorTwo})`,tagname:true},
-            {selector:'text', element:'fill', new:`rgb(${colorColorTwo})`,tagname:true, iframe:true},
+            {selector:'body', element:'color', new:`rgb(${white})`,tagname:true, iframe:true},
+            {selector:'text', element:'fill', new:`rgb(${colorColorThree})`,tagname:true},
+            {selector:'text', element:'fill', new:`rgb(${colorColorThree})`,tagname:true, iframe:true},
+            {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true,iframe:true},
+            {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true},
             {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'background', new:`rgb(${backgroundColorTwo})`},
             {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'color', new:`rgb(${colorColorTwo})`},
             {selector:'highcharts-background', element:'fill', new:`rgb(${backgroundColorTwo})`},
