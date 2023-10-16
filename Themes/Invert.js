@@ -146,10 +146,10 @@ function setDarkThemeSiemV24(){
             //body > section > nav-bar > nav > div > div.mc-navbar__left.layout-row > div.mc-navbar__header.pt-text-overflow.flex-nogrow.ng-isolate-scope
             document.querySelector("div.mc-navbar__header.pt-text-overflow.flex-nogrow.ng-isolate-scope").style.filter='invert(1)'
         })
-        trySetAtrributes(()=>{
-            document.querySelector('.mc-navbar.navbar-blue .mc-navbar__item.mc-active, .mc-navbar.navbar-blue .mc-navbar__item.mc-navbar__item_active, .mc-navbar.navbar-blue .mc-navbar__item.open').style.backgroundColor='grey'
-            document.querySelector('.mc-navbar.navbar-blue .mc-navbar__item.mc-active, .mc-navbar.navbar-blue .mc-navbar__item.mc-navbar__item_active, .mc-navbar.navbar-blue .mc-navbar__item.open').style.background='grey'
-        })
+        // trySetAtrributes(()=>{
+        //     document.querySelector('.mc-navbar.navbar-blue .mc-navbar__item.mc-active, .mc-navbar.navbar-blue .mc-navbar__item.mc-navbar__item_active, .mc-navbar.navbar-blue .mc-navbar__item.open').style.backgroundColor='grey'
+        //     document.querySelector('.mc-navbar.navbar-blue .mc-navbar__item.mc-active, .mc-navbar.navbar-blue .mc-navbar__item.mc-navbar__item_active, .mc-navbar.navbar-blue .mc-navbar__item.open').style.background='grey'
+        // })
 
         trySetAtrributes(()=>{ document.querySelector("mc-navbar-brand").style.filter='invert(1)'})
         trySetAtrributes(()=> document.querySelectorAll('assets-vulnerabilities-stat-indicator').forEach(elem=>elem.style.filter='invert(1)'))
@@ -354,6 +354,14 @@ function Invert(version){
         setDarkThemeSiemV25()
     else
         setDarkThemeSiemV24()
+        let Core = new CoreClass([
+            {element:'background-image',   previous:'url(\"/assets/images/navbar-icon.svg\")',new:"url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFxEAABcRAcom8z8AAAM4SURBVFhHxZddSJNRGMf/583ED2RZzTRXIiUlGasMoggimVEaQTmULN1Fd9VFWayLLrrJCAcRSAhJFJhNS2ujpNDCD6ISGkGKfRiK2Ycfy2aaYzr39p6z45jbtNfa9AcPez4G/2fnfc55zwgkKlQpBwnE4yBEvQhYRnOhwgXRJoK0AaTsaO/HanI7MeUQEVDL6/PG/V9DYu3wjyMCiPTL55kHbnG6+icEArLRnZ4fqHiNW5ySJjUgxvIg5PiIUwSBOyHHNPITPuKMoDUQFh2N5Pw8Zsrt23jWDRW/Z7PyaDpBayB8aSzSzuuZqQ5k8yxgnkWcErQG/NZWgorfnUWcErIZkCNOIXdUa8dFQhbz2INiQyoiV8Qxf/BlK8IVCqzctweR8fH4/bkX3x7XwzE0xOqU6FUqZDwxM7/tVSuull9nPkUURdTU1PBoGiMzNrClpBiJ2XuZ311hRFJeDoTwcBZTnGNjaC8uQa/pIYu9G/BlcnISsbEBd/uIrEeQXHB4mjglLCoKmy5eQIJmN8/8G7IacE040X7JgKeabLTk5KOvsdldIASpZ0+xzxf2UXdOwmKxQKvVeiw3N5dX/JHVwKcbt9BdWQX79z4Mv/8Ay+lzGPvyldXo0jcvV0zbaoODg6ivr/dYQ0MDr/gjq4G+Z03cc+OamEB/y3MeSQ0uieHe3JG3DaUp9sMr53Q64XK5eDQ3ZDXgO2gkLAxxO3fwCOjp6WFNTKFUKrn3d2Q1sOaYTtqGWkTEKaFYvw5br1xGdNJqVuvs7GQNWK1WOBwOlktPT4fBYEBWVhYyMzOh0WhYPhCyzoHZKCwshMlkYn5paSl0Oh3zvfnvc6C7shqu8XEeubHb7SgqKvKIU/R6PaqqquY0D7JWoHH/IdRZ+xEhzUJCQgK6urpgNpsxMDDA6r7Q76jVasTExLDZoEexd6NeyDuKz+zKQPmb18wPMvIeQdPoMPeCj7xzIITM+Ag6NqdhKDGe+UajETabjflBJvAMPJIuE0YZl4kg4D8Dkrg4T+IMwQXiudZw8UDXu1AhSn9M8JZ6CyBOeSdAEMvrFkacUjYlWiDZScnSJAv11qTv8Q7JrgG4+Qcp4leLMYeLXQAAAABJRU5ErkJggg==')"},
+            {element:'background-image',   previous:'url(\"images/navbar-icon.png\")',new:"url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFxEAABcRAcom8z8AAAM4SURBVFhHxZddSJNRGMf/583ED2RZzTRXIiUlGasMoggimVEaQTmULN1Fd9VFWayLLrrJCAcRSAhJFJhNS2ujpNDCD6ISGkGKfRiK2Ycfy2aaYzr39p6z45jbtNfa9AcPez4G/2fnfc55zwgkKlQpBwnE4yBEvQhYRnOhwgXRJoK0AaTsaO/HanI7MeUQEVDL6/PG/V9DYu3wjyMCiPTL55kHbnG6+icEArLRnZ4fqHiNW5ySJjUgxvIg5PiIUwSBOyHHNPITPuKMoDUQFh2N5Pw8Zsrt23jWDRW/Z7PyaDpBayB8aSzSzuuZqQ5k8yxgnkWcErQG/NZWgorfnUWcErIZkCNOIXdUa8dFQhbz2INiQyoiV8Qxf/BlK8IVCqzctweR8fH4/bkX3x7XwzE0xOqU6FUqZDwxM7/tVSuull9nPkUURdTU1PBoGiMzNrClpBiJ2XuZ311hRFJeDoTwcBZTnGNjaC8uQa/pIYu9G/BlcnISsbEBd/uIrEeQXHB4mjglLCoKmy5eQIJmN8/8G7IacE040X7JgKeabLTk5KOvsdldIASpZ0+xzxf2UXdOwmKxQKvVeiw3N5dX/JHVwKcbt9BdWQX79z4Mv/8Ay+lzGPvyldXo0jcvV0zbaoODg6ivr/dYQ0MDr/gjq4G+Z03cc+OamEB/y3MeSQ0uieHe3JG3DaUp9sMr53Q64XK5eDQ3ZDXgO2gkLAxxO3fwCOjp6WFNTKFUKrn3d2Q1sOaYTtqGWkTEKaFYvw5br1xGdNJqVuvs7GQNWK1WOBwOlktPT4fBYEBWVhYyMzOh0WhYPhCyzoHZKCwshMlkYn5paSl0Oh3zvfnvc6C7shqu8XEeubHb7SgqKvKIU/R6PaqqquY0D7JWoHH/IdRZ+xEhzUJCQgK6urpgNpsxMDDA6r7Q76jVasTExLDZoEexd6NeyDuKz+zKQPmb18wPMvIeQdPoMPeCj7xzIITM+Ag6NqdhKDGe+UajETabjflBJvAMPJIuE0YZl4kg4D8Dkrg4T+IMwQXiudZw8UDXu1AhSn9M8JZ6CyBOeSdAEMvrFkacUjYlWiDZScnSJAv11qTv8Q7JrgG4+Qcp4leLMYeLXQAAAABJRU5ErkJggg==')"},
+            {element:'background-color',previous:'rgb(7, 48, 75)',new:'gray'},
+            {element:'background-color',previous:'rgb(17, 79, 120)',new:'gray'},
+            {element:'background-color',previous:'rgb(20, 93, 141)',new:'gray'},
+        ])
+            Core.RulesChanger()
 // isSiemCheck().then((isSiem)=>{
 //     console.log("isSiem: " + isSiem)
 //     if(!isSiem) return

@@ -1,14 +1,14 @@
 function Pink(version){
-    const backgroundColorOne = '43, 8, 36'//darkgray
-    const backgroundColorTwo = '122, 0, 77'//Pinkwhitegray
-    const backgroundColorThree = '82, 0, 52'//blue
-    const backgroundColorFour = '30, 2, 79'//yellow
-    const backgroundColorFive = '73, 0, 199'//active four
-    const borderColor = '209, 0, 125'//Pinkwhitegrayx2
-    const colorColorOne = '204, 51, 117'//bluetext
-    const colorColorTwo = '226, 226, 226'//darkPinkwhite
-    const colorColorThree = '119, 119, 119'//gray
-    const colorColorFour = '255, 84, 209'//activeBlue
+    const backgroundColorOne = '136, 60, 143'//darkgray
+    const backgroundColorTwo = '252, 210, 237'//Pinkwhitegray
+    const backgroundColorThree = '78, 34, 82'//blue
+    const backgroundColorFour = '173, 61, 154'//yellow
+    const backgroundColorFive = '199, 0, 179'//active four
+    const borderColor = 'transparent'//Pinkwhitegrayx2
+    const colorColorOne = '0, 169, 191'//bluetext
+    const colorColorTwo = '0, 0, 0'//darkPinkwhite
+    const colorColorThree = '255, 255, 255'//gray
+    const colorColorFour = '2, 199, 224'//activeBlue
     const colorCodeKBOne = '172, 0, 196'//code in kb purple
     const colorCodeKBTwo = '224, 0, 20'//code in kb red
     const white = '255, 255, 255'//Pinkwhite
@@ -21,6 +21,11 @@ function Pink(version){
         {element:'background-color',   previous:'white',new:`rgb(${backgroundColorTwo})`},
         {element:'background',   previous:'linear-gradient(to right, rgb(240, 240, 240) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgb(240, 240, 240) 100%), url(\"/assets/images/login-bg.png\") 50% 40% repeat-x',new:`linear-gradient(to right, rgb(${backgroundColorOne}) 0%, rgba(${backgroundColorOne}, 0) 20%, rgba(${backgroundColorOne}, 0) 80%, rgb(${backgroundColorOne}) 100%), url(\"/assets/images/login-bg.png\") 50% 40% repeat-x`},
         
+        {element:'background-color',   previous:'rgb(17, 78, 119)',new:`rgb(${backgroundColorOne})`},//pink
+        {element:'background-color',   previous:'rgb(17, 79, 120)',new:`rgb(${backgroundColorOne})`},
+        {element:'background-color',   previous:'rgb(32, 110, 162)',new:`rgb(${backgroundColorThree})`},
+        {element:'background-color',   previous:'rgb(7, 48, 75)',new:`rgb(${backgroundColorThree})`},
+
         {element:'background-color',   previous:'rgb(252, 239, 236)',new:`rgb(${backgroundColorFour})`},
         {element:'background-color',   previous:'rgb(235, 244, 251)',new:`rgb(${backgroundColorThree})`},
 
@@ -63,18 +68,18 @@ function Pink(version){
         {element:'background-color',   previous:'rgba(217, 235, 247, 0.8)',new:`rgba(${backgroundColorThree}, 0.8)`},
         {element:'color',              previous:'rgb(77, 77, 77)',new:`rgb(${colorColorTwo})`},
         
-        {element:'color',              previous:'rgb(85, 85, 85)',new:`rgb(${colorColorTwo})`},
+        // {element:'color',              previous:'rgb(85, 85, 85)',new:`rgb(${colorColorTwo})`},
         {element:'color',              previous:'rgb(17, 79, 120)',new:`rgb(${colorColorFour})`},
         {element:'color',              previous:'rgb(119, 0, 136)',new:`rgb(${colorCodeKBOne})`},
         {element:'color',              previous:'rgb(170, 17, 17)',new:`rgb(${colorCodeKBTwo})`},
-        {element:'color',              previous:'rgb(0, 0, 0)',new:`rgb(${white})`},
-        {element:'color',              previous:'inherit',new:`rgb(${white}})`},
-
-        {element:'color',              previous:'rgb(51, 51, 51)',new:`rgb(${white})`},
-        {element:'color',              previous:'rgb(80, 80, 80)',new:`rgb(${white})`},
-        {element:'color',              previous:'rgb(204, 204, 204)',new:`rgb(${colorColorTwo})`},
-        {element:'color',              previous:'rgb(128, 128, 128)',new:`rgb(${colorColorTwo})`},
-        //{element:'fill',               previous:'rgb(51, 51, 51)',new:`rgb(${colorColorTwo})`},
+        // {element:'color',              previous:'rgb(0, 0, 0)',new:`rgb(${white})`},
+        // {element:'color',              previous:'inherit',new:`rgb(${white}})`},
+        {element:'color',              previous:'rgb(51, 143, 204)',new:`rgb(${colorColorOne})`},//pink
+        {element:'color',              previous:'rgb(153, 153, 153)',new:`rgb(200,200,200))`},
+        {element:'color',              previous:'rgb(51, 51, 51)',new:`rgb(${white})`},//pink
+        // {element:'color',              previous:'rgb(80, 80, 80)',new:`rgb(${white})`},
+        // {element:'color',              previous:'rgb(204, 204, 204)',new:`rgb(${colorColorTwo})`},
+        // {element:'color',              previous:'rgb(128, 128, 128)',new:`rgb(${colorColorTwo})`},
         {element:'border-color',       previous:'rgba(217, 235, 247, 0.8)',new:`rgba(${backgroundColorThree}, 0.8)`},
 
         {element:'border-bottom-color',previous:'rgb(240, 211, 153)',new:`rgba(${backgroundColorFour})`},
@@ -147,20 +152,20 @@ function Pink(version){
     ])
         Core.RulesChanger()
         Core.NewRule([
-            {selector:`body {
-                color: rgb(${white})
-            }`},
+            // {selector:`body {
+            //     color: rgb(${white})
+            // }`},
             {selector:`::-webkit-scrollbar {
                 width: 10px;
                 height: 10px;
                 box-shadow: inset 1px 1px #0000001f;
                 -webkit-transition: all .5s cubic-bezier(.35,0,.25,1);
                 transition: all .5s cubic-bezier(.35,0,.25,1);
-                background-color: rgb(${borderColor})
+                background-color: rgb(${backgroundColorTwo})
             }`},
             {selector:`::-webkit-scrollbar:hover {
                 box-shadow: inset 1px 1px #0000000e,inset 0 -1px #0000000a;
-                background-color: rgb(${backgroundColorThree})
+                background-color: rgb(${backgroundColorTwo})
             }`},
             {selector:`::-webkit-scrollbar-button {
                 display: none
@@ -169,7 +174,7 @@ function Pink(version){
                 background-color: transparent
             }`},
             {selector:`::-webkit-scrollbar-thumb {
-                background-color: rgb(${colorColorOne});
+                background-color: rgb(${backgroundColorFour});
                 box-shadow: inset 1px 1px #0000000e,inset 0 -1px #00000016;
                 -webkit-transition: all .5s cubic-bezier(.35,0,.25,1);
                 transition: all .5s cubic-bezier(.35,0,.25,1)
