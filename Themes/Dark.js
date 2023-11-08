@@ -20,7 +20,7 @@ function Dark(version){
         {element:'background-color',   previous:'rgb(234, 244, 251)',new:`rgb(${backgroundColorOne})`},
         {element:'background-color',   previous:'white',new:`rgb(${backgroundColorTwo})`},
         {element:'background',   previous:'linear-gradient(to right, rgb(240, 240, 240) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgb(240, 240, 240) 100%), url(\"/assets/images/login-bg.png\") 50% 40% repeat-x',new:`linear-gradient(to right, rgb(${backgroundColorOne}) 0%, rgba(${backgroundColorOne}, 0) 20%, rgba(${backgroundColorOne}, 0) 80%, rgb(${backgroundColorOne}) 100%), url(\"/assets/images/login-bg.png\") 50% 40% repeat-x`},
-        
+        {element:'background',   previous:'linear-gradient(90deg, rgb(240, 240, 240) 0px, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgb(240, 240, 240)), url("/assets/images/login-bg.png") 50% 40% repeat-x', new: `linear-gradient(90deg, rgb(${backgroundColorOne}) 0px, rgba(${backgroundColorOne}, 0) 20%, rgba(${backgroundColorOne}, 0) 80%, rgb(${backgroundColorOne})), url("/assets/images/login-bg.png") 50% 40% repeat-x`},
         {element:'background-color',   previous:'rgb(252, 239, 236)',new:`rgb(${backgroundColorFour})`},
         {element:'background-color',   previous:'rgb(235, 244, 251)',new:`rgb(${backgroundColorThree})`},
 
