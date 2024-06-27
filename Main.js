@@ -1,7 +1,7 @@
 async function checkSiem(func){
     await checkReturn(()=>{
         if(document.querySelector('.pt-navbar-icon') || document.querySelector('.mc-navbar-logo')){//siem?
-            if(document.querySelector('pt-siem-app-root').getAttribute('ng-version').includes('14.2')){
+            if(document.querySelector('pt-siem-app-root')?.getAttribute('ng-version').includes('14.2')){
                 func(26)
                 console.log('version:'+26)
             }
