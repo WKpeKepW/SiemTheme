@@ -175,12 +175,13 @@ function Dark(version){
                 transition: all .5s cubic-bezier(.35,0,.25,1)
             }`}
         ])
-        Core.RulesChangerCallBack([
+
+        let arr25 = [
             {selector:'body', element:'color', new:`rgb(${white})`,tagname:true, iframe:true},
             {selector:'text', element:'fill', new:`rgb(${colorColorThree})`,tagname:true},
             {selector:'text', element:'fill', new:`rgb(${colorColorThree})`,tagname:true, iframe:true},
-            {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true,iframe:true},
             {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true},
+            {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true,iframe:true},
             {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'background', new:`rgb(${backgroundColorTwo})`},
             {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'color', new:`rgb(${colorColorTwo})`},
             {selector:'highcharts-background', element:'fill', new:`rgb(${backgroundColorTwo})`},
@@ -188,5 +189,45 @@ function Dark(version){
             {selector:'highcharts-text-outline', element:'stroke', new:`rgb(${backgroundColorTwo})`},
             {selector:'highcharts-text-outline', element:'stroke', new:`rgb(${backgroundColorTwo})`, iframe:true},
             {selector:'mc-body content-container__without-images', element:'color', new:`rgb(${colorColorTwo})`,iframe:true},
-        ])
+        ]
+        let arr26 = [
+            {selector:'body', element:'color', new:`rgb(${white})`,tagname:true, shadow:true},
+            {selector:'text', element:'fill', new:`rgb(${colorColorThree})`,tagname:true},
+            {selector:'text', element:'fill', new:`rgb(${colorColorThree})`,tagname:true, shadow:true},
+            {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true},
+            {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true,shadow:true},
+            {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'background', new:`rgb(${backgroundColorTwo})`},
+            {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'color', new:`rgb(${colorColorTwo})`},
+            {selector:'highcharts-background', element:'fill', new:`rgb(${backgroundColorTwo})`},
+            {selector:'highcharts-background', element:'fill', new:`rgb(${backgroundColorTwo})`, shadow:true},
+            {selector:'highcharts-text-outline', element:'stroke', new:`rgb(${backgroundColorTwo})`},
+            {selector:'highcharts-text-outline', element:'stroke', new:`rgb(${backgroundColorTwo})`, shadow:true},
+            {selector:'mc-body content-container__without-images', element:'color', new:`rgb(${colorColorTwo})`,shadow:true},
+        ]
+        
+        if(version = 25)
+            Core.RulesChangerCallBack(arr25)
+        else if(version = 26)
+            Core.RulesChangerCallBack(arr26)
+
+        let arrall = [
+            {selector:'body', element:'color', new:`rgb(${white})`,tagname:true, iframe:true},
+            {selector:'body', element:'color', new:`rgb(${white})`,tagname:true, shadow:true},
+            {selector:'text', element:'fill', new:`rgb(${colorColorThree})`,tagname:true},
+            {selector:'text', element:'fill', new:`rgb(${colorColorThree})`,tagname:true, iframe:true},
+            {selector:'text', element:'fill', new:`rgb(${colorColorThree})`,tagname:true, shadow:true},
+            {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true},
+            {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true,iframe:true},
+            {selector:'content-container', element:'color', new:`rgb(${white})`,tagname:true,shadow:true},
+            {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'background', new:`rgb(${backgroundColorTwo})`},
+            {selector:'ui-menu ui-widget ui-widget-content ui-autocomplete ui-front', element:'color', new:`rgb(${colorColorTwo})`},
+            {selector:'highcharts-background', element:'fill', new:`rgb(${backgroundColorTwo})`},
+            {selector:'highcharts-background', element:'fill', new:`rgb(${backgroundColorTwo})`, iframe:true},
+            {selector:'highcharts-background', element:'fill', new:`rgb(${backgroundColorTwo})`, shadow:true},
+            {selector:'highcharts-text-outline', element:'stroke', new:`rgb(${backgroundColorTwo})`},
+            {selector:'highcharts-text-outline', element:'stroke', new:`rgb(${backgroundColorTwo})`, iframe:true},
+            {selector:'highcharts-text-outline', element:'stroke', new:`rgb(${backgroundColorTwo})`, shadow:true},
+            {selector:'mc-body content-container__without-images', element:'color', new:`rgb(${colorColorTwo})`,iframe:true},
+            {selector:'mc-body content-container__without-images', element:'color', new:`rgb(${colorColorTwo})`,shadow:true},
+        ]
 }

@@ -1,7 +1,11 @@
 async function checkSiem(func){
     await checkReturn(()=>{
         if(document.querySelector('.pt-navbar-icon') || document.querySelector('.mc-navbar-logo')){//siem?
-            if(document.querySelector('#legacyApplicationFrame') || document.querySelector('mc-web-app-root') || document.querySelector('pt-siem-knowledge-base-root') || document.querySelector('.pt-root')){//version
+            if(document.querySelector('pt-siem-app-root').getAttribute('ng-version').includes('14.2')){
+                func(26)
+                console.log('version:'+26)
+            }
+            else if(document.querySelector('#legacyApplicationFrame') || document.querySelector('mc-web-app-root') || document.querySelector('pt-siem-knowledge-base-root') || document.querySelector('.pt-root')){//version
                 func(25)
                 console.log('version:'+25)
             }
